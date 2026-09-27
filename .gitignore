@@ -1,0 +1,10 @@
+@"
+venv/
+__pycache__/
+*.pyc
+.env
+models/*.bin
+models/*.onnx
+data/*
+test_files/
+"@ | Set-Content .gitignore

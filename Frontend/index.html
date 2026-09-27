@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Private AI Work Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header>
+
+            <div>
+                <h1>Private AI Work Companion</h1>
+                <p>It monitors your computer, not you.</p>
+            </div>
+
+            <div class="status">
+                <span class="dot"></span>
+                Local & Private
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <!-- WELCOME -->
+            <section class="welcome">
+
+                <h2>Good morning 👋</h2>
+
+                <p>
+                    Your digital workday, in one place.
+                </p>
+
+            </section>
+
+
+            <!-- MAIN FEATURE CARDS -->
+            <section class="cards">
+
+
+                <!-- VOICE -->
+                <div class="card">
+
+                    <h3>🎙️ Voice</h3>
+
+                    <p>
+                        Speak to your companion.
+                    </p>
+
+                    <button
+                        id="startVoiceButton"
+                        onclick="startListening()">
+
+                        🎙️ Start Listening
+
+                    </button>
+
+                    <button
+                        id="stopVoiceButton"
+                        onclick="stopListening()"
+                        disabled>
+
+                        ⏹ Stop Recording
+
+                    </button>
+
+                    <div
+                        id="voiceStatus"
+                        class="metric">
+
+                        Status: Ready
+
+                    </div>
+
+                </div>
+
+
+                <!-- FILE SEARCH -->
+                <div class="card">
+
+                    <h3>🔎 Find Files</h3>
+
+                    <p>
+                        Search your local files using meaning.
+                    </p>
+
+                    <button onclick="findFiles()">
+
+                        Find Files
+
+                    </button>
+
+                </div>
+
+
+                <!-- FOCUS -->
+                <div class="card">
+
+                    <h3>🎯 Focus</h3>
+
+                    <p>
+                        Stay aware without being controlled.
+                    </p>
+
+                    <div
+                        id="focusMetric"
+                        class="metric">
+
+                        Focus: Calculating...
+
+                    </div>
+
+                </div>
+
+
+                <!-- WELLNESS -->
+                <div class="card">
+
+                    <h3>🌿 Wellness</h3>
+
+                    <p>
+                        Your workday matters beyond the screen.
+                    </p>
+
+                    <div
+                        id="wellnessMetric"
+                        class="metric">
+
+                        Status: Calculating...
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- DAILY ACTIVITY -->
+            <section class="summary">
+
+                <h2>Today's Activity</h2>
+
+                <div class="activity-dashboard">
+
+                    <div
+                        id="activityChart"
+                        class="activity-chart">
+                    </div>
+
+                    <div
+                        id="activityLegend"
+                        class="activity-legend">
+
+                        <p>
+                            Loading activity...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+<section class="summary">
+    <h2>🔎 Voice Search Results</h2>
+
+    <div id="voiceSearchResults">
+        <p class="empty">
+            Ask me to find a file using your voice.
+        </p>
+    </div>
+</section>
+
+            <!-- TASKS -->
+            <section class="summary tasks-section">
+
+                <h2>📋 My Tasks</h2>
+
+                <div id="taskList">
+
+                    <p class="empty">
+                        No tasks yet.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
