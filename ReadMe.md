@@ -23,7 +23,7 @@ The computer knows what is happening on it — but it doesn't understand when th
 Users can speak naturally to the companion instead of manually typing commands.
 The system performs local speech-to-text and identifies the user's intent.
 
-![Voice Interaction and Work Day Activity](docs/screenshotsScreenshot2026-09-27114516.png)
+![Voice Interaction and Work Day Activity](docs/screenshots/Screenshot%2026-09-27%114516.png)
 
 **🔎 PRIVATE SEMANTIC FILE SEARCH**
 Users can ask:
@@ -38,7 +38,7 @@ Relevant voice instructions such as:
 are converted into persistent tasks.
 Normal conversation is not automatically stored as tasks.
 
-![File Search and Task Memory](docs/screenshots/Screenshot2026-09-27114528.png)
+![File Search and Task Memory](docs/screenshots/Screenshot%2026-09-27%114528.png)
 **💻 Workday Activity**
 
 The companion monitors the currently active foreground application and categorizes usage into areas such as:
